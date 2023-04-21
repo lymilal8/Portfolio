@@ -1,0 +1,402 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow: hidden;
+    padding-right: 50px;
+}
+#nav li{
+    float:right;
+}
+#nav li a{
+    display: block;
+    color: teal;
+    padding: 14px 16px ;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav li a:hover{
+    background-color: black;
+    color: white;
+}
+#logo{
+    float:left;
+    padding: 28px 50px;
+}
+#logo1{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+.container{
+    background: url(./image/Home.jpg) ;
+    background-size: 100% 100%;
+    width:100%;
+    height:90vh;
+}
+/*-------about-----*/
+.containe{
+    padding: 10px 10%;
+}
+#about
+{
+    /* padding: 80px 0; */
+    padding-top: 40px;
+
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: 8%;
+}
+.about-col-1 img{
+    width: 60%;
+    height: 80%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 57%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+
+}
+/*---------Skills--------*/
+#skills
+{
+   width: 100%;
+   height: 55vb;
+   text-align: center;
+   justify-content: center;
+    /* padding: 30px 0; */
+}
+.skills-list{
+    width: 100%;
+    height: 55vb;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#s1{
+    padding-top: 20px;
+    width: 25%;
+    margin: 20px 25px;
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 63, 105);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#s1 h2{
+    padding-bottom: 15px;
+
+}
+#s1 p{
+    text-align: justify;
+
+}
+#icon
+{
+   width: 70px;
+   height: 70px;
+   margin: auto;
+   border-radius:50% ;
+   background-color: rgb(247,32,114);
+   color: white;
+   padding: 20px;
+   font-size: 30px;
+   margin-bottom:25px ;
+
+}
+#s1 a{
+        color: #FF6F61;
+}
+
+/********* Education CSS **********/
+
+.education {
+    position: relative;
+    padding: 60px 30px;
+    background: #ffffff;
+    /* border-bottom: 30px solid white; */
+}
+
+.education .edu-col {
+    position: relative;
+    width: 80%;
+    padding: 20px 0 20px 20px;
+    border-left: 1px solid #FF6F61;
+    border-bottom: 1px solid #FF6F61;
+}
+.education .sub-title
+{
+    margin-left: 7%;
+}
+.education .row{
+    margin-top: 30px;
+}
+.education .edu-col span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.education .edu-col span::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: #FF6F61;
+    top: 5px;
+    left: -26px;
+    border-radius: 5px;
+}
+
+.education .edu-col span i {
+    color: #FF6F61;
+}
+
+.education .edu-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.education .edu-col p {
+    margin: 0;
+}
+
+/* ------- Experience CSS ------ */
+
+
+.experience {
+    position: relative;
+    padding: 0;
+}
+
+.experience .section-header p {
+    margin:0;
+}
+.experience .sub-title{
+   text-align: center;
+}
+.experience .exp-column {
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 25px 30px;
+    background: #e9ecef;
+}
+
+.experience .exp-column::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 80px;
+    right: 100%;
+    left: 15px;
+    background: #AF9483;
+}
+
+.experience .exp-column::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: 0;
+    right: 15px;
+    left: 100%;
+    background: #AF9483;
+}
+
+.experience .exp-column:hover::before {
+    transition: .3s;
+    right: 15px;
+}
+
+.experience .exp-column:hover::after {
+    transition: .3s;
+    left: 15px;
+}
+
+.experience .exp-date {
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.experience .exp-date span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.experience .exp-company {
+    margin-bottom: 0;
+    color: #AF9483;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.experience .exp-designation {
+    margin-bottom: 10px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.experience .exp-detail {
+    margin-bottom: 0;
+}
+
+
+/*********** Contact CSS ***********/
+.contact {
+    position: relative;
+    padding: 0;
+}
+
+.content-header h2{
+    /* margin-left: 16%; */
+    text-align: center;
+   
+}
+.content-inner .row { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.contact-col-1{
+    flex-basis: 35%;
+    margin-left: 8%;
+   
+}
+
+.contact-col-2{
+    flex-basis: 60%;
+   padding-right: 35px;
+
+}
+input[type=text], select, textarea  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #FF6F61;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#f32613;
+  }
+  
+.contact .contact-info {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 156px;
+}
+
+.contact .contact-info p {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.contact .contact-info p i {
+    width: 25px;
+    color: #FF6F61;
+}
+
+.contact .contact-info p a {
+    color: #666666;
+}
+
+.contact .contact-info p a:hover {
+    color: #FF6F61;
+    text-decoration: none;
+}
+
+.contact .social {
+    font-size: 0;
+}
+
+.contact .social a {
+    width: 35px;
+    height: 35px;
+    padding: 5px 0;
+    color: #222222;
+    background: #FF6F61;
+    border-radius: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+    transition: all .3s;
+}
+
+.contact .social a:last-child {
+    margin-right: 0;
+}
+
+.contact .social a:hover {
+    color: #FF6F61;
+    background: #222222;
+}
+.form
+{
+    margin-right: 15px;
+}
+
+
+/* --------- Footer CSS -------- */
+
+
+.footer {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    background: #222222;
+}
+
+.footer .copyright p {
+    color: #999999;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer .copyright p:last-child {
+    margin: 0;
+}
+
